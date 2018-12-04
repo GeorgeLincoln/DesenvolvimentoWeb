@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    
+    <script src="app.js"></script>
+    <title class="titulo"> Prova - 01</title>
+</head>
+<body>
+    <nav class=" titulo navbar navbar-dark bg-dark ">
+        <span class="navbar-brand mb-0 h1">Prova - 01</span>
+    </nav>
+
+    <div class="row blocos m-2">
+
+        <div class="blocos col p-3  mr-2">
+
+            <h2>Matricula da Instituição</h2>
+    
+            <br>
+            <div class="blocos bg-light p-2 borda borda" style="height: 200px">
+                <label for="input_nome_instituicao">Nome da instituição:</label> <br>
+                <input type="text" id="input_nome_instituicao"> <br>
+                <button type="button" onclick="adicionarInstituicao()" class="btn btn-primary mt-2 borda">Cadastrar</button>
+            </div>
+            
+        </div>
+
+        <div class="blocos col p-3 ml-2">
+            <h2>Matricula do Aluno</h2> 
+    
+            <br>
+            <div class="blocos bg-light p-2 borda" style="height: 200px">
+                    <label for="input_nome_aluno">Nome do aluno:</label> <br>
+                    <input type="text" id="input_nome_aluno"> <br>
+                    <select id="select_inst" class="custom-select mt-2">
+                        
+                    </select> <br>
+                    <button onclick="adicionarAluno()" class="btn btn-primary mt-2 borda">Cadastrar</button>
+                </div>
+        </div>
+
+    </div>
+
+    <div class="blocos row m-2 p-3">
+
+        <div class="blocos col">
+            
+            <h3>Lista de Instituições</h3>
+
+            <div class="blocos">
+                <ul id="lista_inst" class="list-group">
+
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="blocos col">
+
+            <h3>Lista de Alunos</h3>
+            
+
+            <div class="blocos ">
+                <ul id="lista_aluno" class="list-group ">
+                    
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+    
+
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
